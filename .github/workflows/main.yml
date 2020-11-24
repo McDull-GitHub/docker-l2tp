@@ -3,11 +3,6 @@ name: buildx latest
 on:
   push:
     branches: [master]
-    paths:
-      - .github/workflows/main.yml
-      - .dockerignore
-      - Dockerfile
-      - run.sh
   schedule:
     - cron: '25 2,14 * * *'
   repository_dispatch:
